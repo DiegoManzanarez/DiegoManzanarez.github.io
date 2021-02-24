@@ -1,0 +1,94 @@
+body{
+	font-family: "Times New Roman", Times, serif;
+	background-color: 33FFB2;
+	margin-left: 43px;
+}
+
+div p.mid{   
+	padding: 0px 10px 0px 29px;
+}
+
+.subt{
+	padding: 0px 5px 0px 9px;
+}
+
+.spacinglist{
+	padding: 0px 10px 0px 69px;
+}
+
+.links{
+	border-style:outset;
+	border-width: 5px;
+	width: 100px;
+	text-align: center;
+}
+
+.blck{
+	font-style: bold;
+
+}
+
+h1 {
+	text-align: center;
+	color: blue;
+}
+h2 {
+	text-align: center;
+	color: blue;
+}
+h3 {
+	padding: 0px 0px 0px 18px;
+}
+
+div {   
+  	padding: 0px 10px 20px 61px;
+}
+
+.img0{
+	padding: 10px 10px 10px 50px;
+}
+
+.img1{
+	padding: 10px 10px 10px 220px;
+}
+
+.upper{  
+  	padding: 0px 8px 18px 63px;
+}
+
+.down {
+  	padding: 0px 10px 10px 57px;	
+}
+
+.downfoo{
+	padding: 0px 10px 10px 13px;	
+}
+
+
+ul {
+	padding: 0px 10px 20px 69px;
+}
+h4 {
+	padding: 0px 0px 0px 36px;
+}
+
+li {
+	padding: 21px 0px 21px 0px;
+}
+
+.ch4{
+	padding-bottom: 0px;
+}
+
+footer{
+	text-align: center;
+}
+.midd{
+	padding-left: 200px;
+	text-align: center;
+}
+
+.init{
+	padding-left: 30px;
+	text-align: center;
+}
