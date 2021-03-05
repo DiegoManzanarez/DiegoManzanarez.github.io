@@ -118,10 +118,9 @@ ul{
 	text-align: center;
 
 }
-}
 
 p{
-	text-align: justify-all;
+	text-align: justify;
 }
 
 .button2{
@@ -138,7 +137,7 @@ p{
 	border-width: 3px;
 	border-color: black;
 	border-radius: 100px;
-	width: 150px;
+	width: 130px;
 }
 
 .padd{
