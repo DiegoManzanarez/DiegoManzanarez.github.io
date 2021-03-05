@@ -11,7 +11,7 @@ header {
 
 h1 {
 	margin:auto;	
-  padding: 12px 100px 100px 100px;
+  padding: 0px 100px 100px 100px;
   font: 44px "Arial";
   text-align: center;
 }
@@ -33,18 +33,17 @@ body{
 }
 
 .stats{
-  padding-left: 0px;
+  padding-left: 20px;
 }
 
 .bstats{
-  margin-top: 12.1px;
+  margin-top: 20px;
   background-image: linear-gradient(green, yellow);
   border-width: 3px;
   border-color: black;
   border-radius: 50px;
-  width: 180px;
+  width: 160px;
 }
-
 
 
 .left {
@@ -124,17 +123,6 @@ button {
    height: 40px;
 }
 
-.stats{
-  padding-left: 207px;
-}
-
-#bstats{ 
-  background-color: red;
-  border-width: 3px;
-  border-color: black;
-  border-radius: 15px;
-  width: 130px;
-}
 
 .calc {
   font-size: 22px;
