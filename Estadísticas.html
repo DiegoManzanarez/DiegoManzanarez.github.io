@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-MX" xml:lang="es-MX">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estadisticas GAME&STEAM</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="function.js"></script>
+
+<!--  START CURVE CHART  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Edad', 'Mujeres', 'Hombres'],
+          ['10',  30 , 20],
+          ['11',  36, 12],
+          ['12',  9, 39],
+          ['13',  33, 7]
+        ]);
+
+        var options = {
+          backgroundColor: 'transparent',
+          curveType: 'function',
+          chartArea:  {left:50,top:30,width:'78%',height:'73%'},
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+<!--  END CURVE CHART  -->
+
+
+   
+<!--  START PIE DONUT CHART  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Género', 'Número de personas'],
+          ['Mujeres',     106],
+          ['Hombres',      67],
+        ]);
+
+        var options = {
+        backgroundColor: 'transparent',
+        chartArea:  {left:57,top:55,width:'77%',height:'72%'},
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+<!--  END PIE DONUT CHART  -->
+
+
+
+
+<!--  START COLUMN CHART  -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Escenario", "Minutos", { role: "style" } ],
+        ["Laboratorio", 5, "#b87333"],
+        ["Mezclas", 19, "silver"],
+        ["Torres de Hanoi", 16, "gold"],
+        ["Basquetbol Parabólico", 9, "color: #e5e4e2"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+      	backgroundColor: 'transparent',
+        width: 850,
+        height: 450,
+        bar: {groupWidth: "95%"},
+        chartArea:  {left:50,top:30,width:'78%',height:'73%'},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+
+
+<!--  END COLUMN CHART  -->
+
+
+<!--  START DONUT 3D CHART  -->
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Edad', 'Número de personas'],
+          ['< 12 años',     45],
+          ['12 a 18 años',      90],
+          ['> 18 años',  38],
+        ]);
+
+        var options = {
+          backgroundColor: 'transparent',
+          chartArea:  {left:57,top:55,width:'77%',height:'72%'},
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+
+ <!--  END DONUT 3D CHART  -->
+
+
+	</head>
+
+	
+	<header>
+  		<h1>Estadísticas GAME & STEAM</h1>
+
+	</header>
+
+<section>
+
+	<body>
+
+		<div class="row">
+		
+	  <div class="column1">
+
+	  	<h2 class="weird"><u>Tiempo Promedio de actividad</u></h2>
+
+	  	<div id="columnchart_values" style="width: 700px; height: 450px;"></div>
+	  	
+
+	  </div>
+
+
+	  
+	  <div class= "column2">
+	  	<h2 class="weird"><u>Edad promedio de jugadores</u></h2>
+
+	  		<div id="piechart_3d" style="width: 900px; height: 450px;"></div>
+
+
+	  </div>
+	  
+	</div>
+
+	<!--<hr size="15" width="100%" color="black">-->
+
+	<nobr>
+		<div class="row">
+	  <div class="column3">
+			
+			<h2 class= "weird"><u>Número de usuarios por género</u></h2>
+	  		<p id="curve_chart" style="width: 850px; height: 430px"></p>
+
+	  </div>
+
+	  <div class= "column4">
+
+	  	<h2><u>Mayor permanencia en línea</u></h2>
+
+	  	    <div id="donutchart" style="width: 900px; height: 446px;"></div>
+
+	  </div>
+	</div>
+</nobr>
+
+
+
+			<hr size=5 width="100%" color="black">
+
+	<footer>
+       	<div class="downfoo">
+			<b>Autores:</b> Diego Enrique Manzanarez Velázquez    |   Santiago Orozco Quintero    |   Luis Enrique Bojórquez Almazán   |   Jesus Javier Hernández Delgado
+        </div>
+        <nav>
+            <a class="links" href="https://github.com/DiegoManzanarez?tab=repositories">Github</a>
+            <b> | </b>
+            <a class="links" href="https://www.linkedin.com/in/diego-manzanarez-bb46221b7/">Linked in</a>
+        </nav>
+	</footer>
+
+	</body>
+
+</section>
+
+</html>
