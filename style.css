@@ -1,0 +1,196 @@
+
+header {
+  position: relative;
+  height: 174px;
+  background-image: linear-gradient(red, purple);
+  border-left: 14px solid black;
+  border-top: 14px solid black;
+  border-right: 14px solid black;
+  border-bottom: 7px solid black;
+}
+
+h1 {
+	margin:auto;	
+  padding: 12px 100px 100px 100px;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+header h1 {
+  color: black;
+}
+
+
+
+body{
+	font-family: "Times New Roman", Times, serif;
+	/*background-image: linear-gradient(yellow, green);*/
+	background-image: linear-gradient(green, yellow);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.stats{
+  padding-left: 0px;
+}
+
+.bstats{
+  margin-top: 12.1px;
+  background-image: linear-gradient(green, yellow);
+  border-width: 3px;
+  border-color: black;
+  border-radius: 50px;
+  width: 180px;
+}
+
+
+
+.left {
+  width: 20%
+}
+
+.right{
+  width: 50%;
+}
+
+.column1 {
+  border-left: 14px solid black;
+  border-top: 7px solid black;
+  border-right: 7px solid black;
+  border-bottom: 7px solid black;
+  float: left;
+  width: 54%;
+
+}
+
+.column2 {
+  border-left: 7px solid black;
+  border-top: 7px solid black;
+  border-right: 14px solid black;
+  border-bottom: 7px solid black;
+  float: left;
+  width: 46%;
+
+}
+
+.column3 {
+  border-left: 14px solid black;
+  border-top: 7px solid black;
+  border-right: 7px solid black;
+  border-bottom: 14px solid black;
+  float: left;
+  width: 54%;
+
+}
+
+.column4 {
+  border-left: 7px solid black;
+  border-top: 7px solid black;
+  border-right: 14px solid black;
+  border-bottom: 14px solid black;
+  padding-top: 20px;
+  float: left;
+  width: 46%;
+
+}
+
+
+.downfoo{
+  padding: 0px 10px 10px 13px;  
+}
+
+.links{
+  border-style:outset;
+  border-width: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+button {
+   font-size: 18px;
+   border: 2px solid #00FFF0;
+   border-radius:1px;
+   width: 110px;
+   height: 40px;
+}
+
+.stats{
+  padding-left: 207px;
+}
+
+#bstats{ 
+  background-color: red;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 15px;
+  width: 130px;
+}
+
+.calc {
+  font-size: 22px;
+  width:90%;
+  background-image: linear-gradient(to right, red , yellow);
+  padding: 0px 0px 26px 0px;
+}
+
+.justified{
+  text-align: justify;
+}
+
+p{
+
+  text-align: justify;
+  width: 95%
+}
+
+h1 {
+  font-size: 39px;
+  text-align: center;
+  color: black;
+}
+
+.weird{
+  padding-top: 20px;
+}
+
+ol{
+  position: relative;
+  margin: auto;
+  width:80%;
+  text-align: justify;
+}
+
+h2 {
+   text-align: center;
+   font-size: 25.2px;
+}
+
+
+h3 {
+  padding-left: 50px;
+}
+
+
+form {
+
+  padding: 0px 50px 20px 202px;
+}
+
+li {
+  padding: 5px 0px 15px 0px;
+}
+
+
+footer{
+  text-align: center;
+}
