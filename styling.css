@@ -208,9 +208,7 @@ button {
    height: 40px;
 }
 
-button:hover {
-   background-image: linear-gradient(orange, purple);
-}
+button:hover {background-image: linear-gradient(red, yellow);}
 
 button:active {
   background-color: #3e8e41;
@@ -225,8 +223,21 @@ button:active {
    	width: 90px;
    	height: 90px;
 	background-image: linear-gradient(orange, purple);
+	/*background-color: darkorange;*/
 	background-size: 93%;
 }
+
+#B1:hover{
+	background-image: linear-gradient(red, yellow);
+}
+
+#B1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 
 #B2{
 	font-size: 18px;
@@ -238,6 +249,16 @@ button:active {
 	background-size: 93%;
 }
 
+#B2:hover{
+	background-image: linear-gradient(red, yellow);
+}
+
+#B2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 #B3{
 	font-size: 18px;
@@ -247,6 +268,16 @@ button:active {
    	height: 90px;
 	background-image: linear-gradient(orange, purple);
 	background-size: 93%;
+}
+
+#B3:hover{
+	background-image: linear-gradient(red, yellow);
+}
+
+#B3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 
