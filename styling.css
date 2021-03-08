@@ -208,7 +208,9 @@ button {
    height: 40px;
 }
 
-button:hover {background-color: lightblue}
+button:hover {
+   background-image: linear-gradient(orange, purple);
+}
 
 button:active {
   background-color: #3e8e41;
