@@ -63,17 +63,17 @@ body{
 }
 
 .lft {
-  width: 39%;
+  width: 36%;
 
 }
 
 .middl {
-  width: 26%;
+  width: 30%;
 
 }
 
 .rght {
-  width: 35%;
+  width: 30%;
 
 }
 
@@ -91,14 +91,10 @@ ul{
 	position: relative;
 	margin: auto;
 	width:50%;
-	background-color: lightblue;
-	border: 10px solid;
 	background-image: linear-gradient(to left, blue, yellow);
-	border-image: linear-gradient(
-      to bottom, 
-      red, 
-      purple
-    ) 1 100%;
+    border: 10px solid;
+	border-image-source: linear-gradient(45deg, red, purple);
+  	border-image-slice: 1;
 
 }
 
@@ -218,7 +214,7 @@ button:active {
 
 #B1{
 	font-size: 18px;
-   	border: 2px solid black;
+   	border: 3.9px solid black;
    	border-radius:100px;
    	width: 90px;
    	height: 90px;
@@ -241,7 +237,7 @@ button:active {
 
 #B2{
 	font-size: 18px;
-   	border: 2px solid black;
+   	border: 3.9px solid black;
    	border-radius:100px;
    	width: 90px;
    	height: 90px;
@@ -262,7 +258,7 @@ button:active {
 
 #B3{
 	font-size: 18px;
-   	border: 2px solid black;
+   	border: 3.9px solid black;
    	border-radius:100px;
    	width: 90px;
    	height: 90px;
@@ -310,7 +306,7 @@ button:active {
 	background-color: red;
 	border-color: black;
 	border-radius: 15px;
-	border-width: 5px
+	border-width: 4px
 
 }
 
@@ -320,7 +316,7 @@ button:active {
 	background-color: yellow;
 	border-color: black;
 	border-radius: 15px;
-	border-width: 5px
+	border-width: 4px
 }
 
 .boxpadding{
@@ -340,14 +336,14 @@ button:active {
 
 
 .boxed {
+border-radius: 30px;
   width: 512.3px;
   height: 380px
   padding: 10px;
-  border: 6.5px solid black;
-  border-radius: 10px;
   background-color: white;
-  border-image: linear-gradient(to bottom, red, purple)1 100%;
-  background-image: linear-gradient(to left, red, purple);
+  border: 6px solid;
+  border-image-source: linear-gradient(45deg, purple, red);
+  border-image-slice: 1;
   margin: 0;
 }
 
@@ -435,6 +431,58 @@ li {
 		content: 'Mathematics';
 	}
 }
+
+
+      .formPopup {
+      	padding: 0px 0px 0px 0px;
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 10%;
+        transform: translate(-20%, 5%);
+        border: 25px solid;
+		border-image-source: linear-gradient(45deg, blue, purple, pink, blue, purple, pink, blue, purple, pink);
+  		border-image-slice: 1;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password]{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 7px 20px;
+        border: none;
+        /*background-color: #8ebf42;*/
+        background-color: darkgreen;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 10;
+        border-radius: 50px;
+      }
+      .formContainer .cancel {
+        background-color: #cc0000;
+        opacity: 10;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 10;
+      }
 
 
 footer{
