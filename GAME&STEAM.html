@@ -80,10 +80,30 @@
 				</p>
 
     			 <p class="button1">
-    			 	<button class="jugar"> <b><u>JUGAR</u></b></button>
+    			 	<button class="jugar" onclick="openForm()"> <b><u>JUGAR</u></b></button>
     			 	<button class="calificar"> CALIFICAR </button>
 	  			</p>
 	  		</xli2>	
+
+
+	  		<div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h2>Antes de comenzar, por favor introduce tu género y edad</h2>
+          <label for="email">
+            <strong>Género</strong>
+          </label>
+          <input type="text" id="email" placeholder="Femenino o masculino" name="email" required>
+          <label for="psw">
+            <strong>Edad</strong>
+          </label>
+          <input type="text" id="psw" placeholder="Edad en años" name="psw" required>
+          <button type="submit" class="btn">Aceptar e ir a jugar</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
     </div>
 
     <div class="column rght">
