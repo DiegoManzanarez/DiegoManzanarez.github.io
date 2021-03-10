@@ -433,12 +433,16 @@ li {
 }
 
 
+	.formheader{
+		font-size: 20px;
+	}
+
       .formPopup {
       	padding: 0px 0px 0px 0px;
         display: none;
         position: fixed;
         left: 45%;
-        top: 10%;
+        top: 7%;
         transform: translate(-20%, 5%);
         border: 25px solid;
 		border-image-source: linear-gradient(45deg, blue, purple, pink, blue, purple, pink, blue, purple, pink);
@@ -466,7 +470,6 @@ li {
       .formContainer .btn {
         padding: 7px 20px;
         border: none;
-        /*background-color: #8ebf42;*/
         background-color: darkgreen;
         color: #fff;
         cursor: pointer;
