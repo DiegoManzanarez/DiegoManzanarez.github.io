@@ -126,7 +126,7 @@ p{
 }
 
 .stats{
-	padding-left: 320px;
+	padding-left: 300px;
 }
 
 .bstats{
@@ -135,7 +135,7 @@ p{
 	border-width: 3px;
 	border-color: black;
 	border-radius: 50px;
-	width: 160px;
+	width: 157px;
 }
 
 .bstats span {
