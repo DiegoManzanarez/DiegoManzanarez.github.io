@@ -88,18 +88,28 @@
 
 	  		<div class="loginPopup">
       <div class="formPopup" id="popupForm">
-        <form action="/action_page.php" class="formContainer">
-          <h2>Antes de comenzar, por favor introduce tu género y edad</h2>
-          <label for="email">
-            <strong>Género</strong>
+        <form action="https://www.google.com.mx/?hl=es-419" class="formContainer">
+
+          <h2 class="formheader">Antes de comenzar, por favor introduce tu nombre, edad y género</h2>
+
+          <label for="Nombre">
+            <strong>Nombre</strong>
           </label>
-          <input type="text" id="email" placeholder="Femenino o masculino" name="email" required>
-          <label for="psw">
+          <input type="text" id="Nombre" placeholder="Nombre" name="Nombre" required>
+
+          <label for="Edad">
             <strong>Edad</strong>
           </label>
-          <input type="text" id="psw" placeholder="Edad en años" name="psw" required>
+          <input type="text" id="Edad" placeholder="Edad en años" name="Edad" required>
+
+          <label for="Genero">
+            <strong>Género</strong>
+          </label>
+          <input type="text" id="Genero" placeholder="Femenino o masculino" name="Genero" required>
+
           <button type="submit" class="btn">Aceptar e ir a jugar</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+
         </form>
       </div>
     </div>
