@@ -63,22 +63,22 @@ body{
 }
 
 .lft {
-  width: 36%;
+  width: 39%;
 
 }
 
 .middl {
-  width: 30%;
+  width: 28%;
 
 }
 
 .rght {
-  width: 30%;
+  width: 31%;
 
 }
 
 .left {
-	width: 20%
+	width: 24%
 }
 
 .checked {
@@ -126,7 +126,7 @@ p{
 }
 
 .stats{
-	padding-left: 300px;
+	padding-left: 270px;
 }
 
 .bstats{
@@ -135,7 +135,7 @@ p{
 	border-width: 3px;
 	border-color: black;
 	border-radius: 50px;
-	width: 157px;
+	width: 156px;
 }
 
 .bstats span {
