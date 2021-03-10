@@ -46,3 +46,10 @@ function showPicture3() {
   img.src = sourceOfPicture.replace('30x30', '30x30');
   img.style.display = "block";
 }
+
+      function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
